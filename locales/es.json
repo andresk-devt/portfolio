@@ -1,4 +1,8 @@
 {
-  "hello": "Hola, {name}！",
-  "language": "Idioma"
+  "languageSelector": {
+    "en": "Ingles",
+    "es": "Espanol",
+    "fr": "Frances"
+  },
+  "testText": "Texto de prueba espanol lenguaje"
 }
