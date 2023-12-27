@@ -9,10 +9,10 @@
     </div>
     <nav class="menu-container">
       <ul class="menu-container-list">
-        <li class="menu-container-list__item">Home</li>
-        <li class="menu-container-list__item">Services</li>
-        <li class="menu-container-list__item">Projects</li>
-        <li class="menu-container-list__item">Contact</li>
+        <li class="menu-container-list__item">{{ $t("header.home") }}</li>
+        <li class="menu-container-list__item">{{ $t("header.services") }}</li>
+        <li class="menu-container-list__item">{{ $t("header.projects") }}</li>
+        <li class="menu-container-list__item">{{ $t("header.contact") }}</li>
       </ul>
     </nav>
   </div>

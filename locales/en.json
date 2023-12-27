@@ -4,5 +4,11 @@
     "es": "Spanish",
     "fr": "France"
   },
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
   "testText": "Text to test english language"
 }

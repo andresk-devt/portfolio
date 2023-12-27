@@ -4,5 +4,11 @@
     "es": "Espagnol",
     "fr": "Français"
   },
+  "header": {
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
   "testText": "Langue du texte du test en français"
 }
