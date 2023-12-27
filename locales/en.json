@@ -10,5 +10,11 @@
     "projects": "Projects",
     "contact": "Contact"
   },
+  "homeInformation": {
+    "greeting": "Hi I'm",
+    "job": "FrontEnd Developer",
+    "personalInformation": "Web developer, I like to teach what I know and learn new things from others. I consider myself self-taught, I like to be constantly learning and working in a team. Give and receive continuous feedback and apply good practices in the code.",
+    "buttonText": "Download CV"
+  },
   "testText": "Text to test english language"
 }

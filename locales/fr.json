@@ -10,5 +10,11 @@
     "projects": "Projets",
     "contact": "Contact"
   },
+  "homeInformation": {
+    "greeting": "Bonjour im",
+    "job": "Développeur FrontEnd",
+    "personalInformation": "Développeur web, j'aime enseigner ce que je sais et apprendre de nouvelles choses des autres. Je me considère comme un autodidacte, j'aime apprendre en permanence et travailler en équipe. Je donne et reçois un retour d'information continu et j'applique les bonnes pratiques dans le code.",
+    "buttonText": "Télécharger le CV"
+  },
   "testText": "Langue du texte du test en français"
 }

@@ -10,5 +10,11 @@
     "projects": "Proyectos",
     "contact": "Contacto"
   },
+  "homeInformation": {
+    "greeting": "Hola yo soy",
+    "job": "Desarrollador Web",
+    "personalInformation": "Desarrollador web, me gusta enseñar lo que sé y aprender cosas nuevas de los demás. Me considero autodidacta, me gusta estar en constante aprendizaje y trabajar en equipo. Dar y recibir feedback continuo y aplicar buenas prácticas en el código.",
+    "buttonText": "Descargar CV"
+  },
   "testText": "Texto de prueba espanol lenguaje"
 }

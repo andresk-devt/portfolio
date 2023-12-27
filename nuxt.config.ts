@@ -10,5 +10,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ['nuxt-icon']
+  modules: ['nuxt-icon'],
+  plugins: ['~/plugins/Vue3Lottie.client.ts'],
 })
