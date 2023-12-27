@@ -92,18 +92,13 @@ onMounted(() => {
     }
   }
 });
-
-// watch: {
-//   '$i18n.locale': function(newVal, oldVal) {
-//     console.log('locale change', newVal)
-//   }
-// }
 </script>
 
 <style lang="scss" scoped>
 .language-selector {
   width: 40px;
   padding: 3px;
+  padding-left: 7px;
   border-radius: 4px;
   background: $primary-color;
   &-list__item {
