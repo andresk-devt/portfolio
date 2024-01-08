@@ -41,7 +41,11 @@
   },
   "contact": {
     "title": "Contactez-moi",
-    "subtitle": ""
+    "subtitle": "",
+    "contactEmail": {
+      "subject": "Sujet",
+      "message": "Message"
+    }
   },
   "testText": "Langue du texte du test en français"
 }

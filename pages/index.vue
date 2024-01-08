@@ -42,7 +42,7 @@
         }"
       >
         <template #article-container-content>
-          <Contact />
+          <ContactContainer />
         </template>
       </ArticleContainer>
     </main>

@@ -41,7 +41,11 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": ""
+    "subtitle": "",
+    "contactEmail": {
+      "subject": "Subject",
+      "message": "Message"
+    }
   },
   "testText": "Text to test english language"
 }

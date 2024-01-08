@@ -41,7 +41,11 @@
   },
   "contact": {
     "title": "Contactame",
-    "subtitle": ""
+    "subtitle": "",
+    "contactEmail": {
+      "subject": "Asunto",
+      "message": "Mensaje"
+    }
   },
   "testText": "Texto de prueba espanol lenguaje"
 }
