@@ -39,5 +39,9 @@
       "text": "Ma startup où je développe des projets freelance avec des amis, créant des solutions numériques uniques et innovantes adaptées aux besoins du client."
     }
   },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": ""
+  },
   "testText": "Langue du texte du test en français"
 }

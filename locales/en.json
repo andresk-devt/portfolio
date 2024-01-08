@@ -39,5 +39,9 @@
       "text": "My startup where I develop freelance projects with friends, creating unique and innovative digital solutions adapted to the client's needs. client's needs."
     }
   },
+  "contact": {
+    "title": "Contact",
+    "subtitle": ""
+  },
   "testText": "Text to test english language"
 }

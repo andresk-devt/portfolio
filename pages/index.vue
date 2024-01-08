@@ -29,9 +29,20 @@
           title: $t('experience.title'),
           subtitle: $t('experience.subtitle'),
         }"
+        style="height: 100%;"
       >
         <template #article-container-content>
           <Experience />
+        </template>
+      </ArticleContainer>
+      <ArticleContainer
+        :title="{
+          title: $t('contact.title'),
+          subtitle: $t('contact.subtitle'),
+        }"
+      >
+        <template #article-container-content>
+          <Contact />
         </template>
       </ArticleContainer>
     </main>
