@@ -1,11 +1,5 @@
 <template>
   <div class="experience-container">
-    <div class="title-container">
-      <span class="title-container__subtitle"> Destacado </span>
-      <h1 class="title-container__title">
-        <span class="underline">Experiencia</span>
-      </h1>
-    </div>
     <div class="experience-container__content">
       <ol class="items-center sm:flex">
         <li class="relative mb-6 sm:mb-0">
@@ -31,17 +25,15 @@
           </div>
           <div class="experience-item mt-3 sm:pe-8">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              Zabal Bodega
+              {{ $t("experience.zabal.title") }}
             </h3>
             <time
               class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >Mayo, 2021 | Desarrollador Full-Stack</time
             >
+              {{ $t("experience.zabal.subtitle") }}
+            </time>
             <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Encargado de la creación de un producto web a la medida, adaptado
-              a las necesidades específicas de la empresa. Dirigí el desarrollo
-              de esta solución con el objetivo de optimizar los procesos
-              internos, logrando una notable mejora en los tiempos operativos.
+              {{ $t("experience.zabal.text") }}
             </p>
           </div>
         </li>
@@ -68,18 +60,15 @@
           </div>
           <div class="experience-item mt-3 sm:pe-8">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              Guane Emerging technologies
+              {{ $t("experience.guane.title") }}
             </h3>
             <time
               class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >Nov, 2021 | Desarrollador Web</time
             >
+              {{ $t("experience.guane.subtitle") }}
+            </time>
             <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Encargado del desarrollo de interfaces eficientes y funcionales.
-              Contribuyo al rendimiento y la usabilidad de las aplicaciones
-              mediante la implementación de buenas practicas, con tecnologias
-              front-end. Trabajando en conjunto con diseñadores y
-              desarrolladores back-end.
+              {{ $t("experience.guane.text") }}
             </p>
           </div>
         </li>
@@ -106,16 +95,15 @@
           </div>
           <div class="experience-item mt-3 sm:pe-8">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              Envba Software Solutions
+              {{ $t("experience.envba.title") }}
             </h3>
             <time
               class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >Ene, 2023 | Desarrollador Full-Stack</time
             >
+              {{ $t("experience.envba.subtitle") }}
+            </time>
             <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Mi startup donde desarrollo proyectos freelance con amigos,
-              creando soluciones digitales únicas e inovadoras adaptada a las necesidades del
-              cliente.
+              {{ $t("experience.envba.text") }}
             </p>
           </div>
         </li>
@@ -139,7 +127,7 @@
 }
 .experience-item {
   padding: 20px;
-  font-size: 14px;
+  font-size: 16px;
   height: 188px;
   h3 {
     color: $secondary-color;
@@ -150,18 +138,6 @@
 ol {
   li {
     width: 100%;
-  }
-}
-.title-container {
-  width: 100%;
-  font-family: $font-portfolio;
-  &__subtitle {
-    color: $text-color;
-    font-size: 0.85rem;
-  }
-  &__title {
-    color: $secondary-color;
-    font-size: 1.8rem;
   }
 }
 </style>

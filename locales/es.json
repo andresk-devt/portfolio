@@ -16,5 +16,28 @@
     "personalInformation": "Desarrollador web, me gusta enseñar lo que sé y aprender cosas nuevas de los demás. Me considero autodidacta, me gusta estar en constante aprendizaje y trabajar en equipo. Dar y recibir feedback continuo y aplicar buenas prácticas en el código.",
     "buttonText": "Descargar CV"
   },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "servicios"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "destacado",
+    "zabal": {
+      "title": "Zabal Bodega",
+      "subtitle": "Mayo, 2021 / Desarrollador Full-Stack",
+      "text": "Encargado de la creación de un producto web a la medida, adaptado a las necesidades específicas de la empresa. Dirigí el desarrollo de esta solución con el objetivo de optimizar los procesos internos, logrando una notable mejora en los tiempos operativos."
+    },
+    "guane": {
+      "title": "Guane Emerging technologies",
+      "subtitle": "Nov, 2021 / Desarrollador Web",
+      "text": "Encargado del desarrollo de interfaces eficientes y funcionales. Contribuyo al rendimiento y la usabilidad de las aplicaciones mediante la implementación de buenas practicas, con tecnologias front-end. Trabajando en conjunto con diseñadores y desarrolladores back-end."
+    },
+    "envba": {
+      "title": "Envba Software Solutions",
+      "subtitle": "Ene, 2023 / Desarrollador Full-Stack",
+      "text": "Mi startup donde desarrollo proyectos freelance con amigos, creando soluciones digitales únicas e inovadoras adaptada a las necesidades del cliente."
+    }
+  },
   "testText": "Texto de prueba espanol lenguaje"
 }

@@ -14,12 +14,22 @@
           <HomeInformation />
         </template>
       </ArticleContainer>
-      <ArticleContainer>
+      <ArticleContainer
+        :title="{
+          title: $t('projects.title'),
+          subtitle: $t('projects.subtitle'),
+        }"
+      >
         <template #article-container-content>
           <ProjectsInformation />
         </template>
       </ArticleContainer>
-      <ArticleContainer>
+      <ArticleContainer
+        :title="{
+          title: $t('experience.title'),
+          subtitle: $t('experience.subtitle'),
+        }"
+      >
         <template #article-container-content>
           <Experience />
         </template>
@@ -46,5 +56,6 @@
   position: absolute;
   right: 2%;
   top: 9px;
+  z-index: 105;
 }
 </style>

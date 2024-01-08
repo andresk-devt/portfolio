@@ -16,5 +16,28 @@
     "personalInformation": "Web developer, I like to teach what I know and learn new things from others. I consider myself self-taught, I like to be constantly learning and working in a team. Give and receive continuous feedback and apply good practices in the code.",
     "buttonText": "Download CV"
   },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "services"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "featured",
+    "zabal": {
+      "title": "Zabal Warehouse",
+      "subtitle": "May, 2021 / Full-Stack Developer",
+      "text": "Responsible for the creation of a customized web product, adapted to the specific needs of the company. I led the development of this solution with the objective of optimizing internal processes, achieving a significant improvement in operating times."
+    },
+    "guane": {
+      "title": "Guane Emerging technologies",
+      "subtitle": "Nov, 2021 / Web Developer",
+      "text": "In charge of the development of efficient and functional interfaces. I contribute to the performance and usability of applications by implementing best practices through the implementation of best practices, with front-end technologies. front-end technologies. Working together with designers and back-end back-end developers."
+    },
+    "envba": {
+      "title": "Envba Software Solutions",
+      "subtitle": "Jan, 2023 / Full-Stack Developer",
+      "text": "My startup where I develop freelance projects with friends, creating unique and innovative digital solutions adapted to the client's needs. client's needs."
+    }
+  },
   "testText": "Text to test english language"
 }
