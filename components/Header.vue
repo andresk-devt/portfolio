@@ -87,14 +87,19 @@ export default {
   display: none;
 }
 .menu-list-container {
+  display: none;
   position: absolute;
   background-color: #2d3245;
   width: 60%;
+  max-width: 300px;
   height: 100vh;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
   transform: translateX(-100%);
+  @media (max-width: 750px) {
+    display: block;
+  }
 }
 .is-open {
   transform: translateX(0);
