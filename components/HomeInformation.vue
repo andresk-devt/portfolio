@@ -131,6 +131,7 @@ watch(locale, (newValue) => {
     background-color: $secondary-color;
     border: none;
     color: $text-color;
+    font-family: $font-portfolio;
     cursor: pointer;
   }
 }

@@ -44,6 +44,7 @@
     &__item {
       height: 100%;
       background: #282c3e;
+      font-family: $font-portfolio;
     }
   }
 }
