@@ -1,11 +1,11 @@
 <template>
   <div class="experience-container">
     <div class="experience-container__content">
-      <ol class="items-center sm:flex">
-        <li class="relative mb-6 sm:mb-0">
+      <ol class="items-center lg:flex">
+        <li class="relative mb-6 lg:mb-0">
           <div class="flex items-center">
             <div
-              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
+              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 lg:ring-8 dark:ring-gray-900 shrink-0"
             >
               <svg
                 class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
@@ -20,15 +20,15 @@
               </svg>
             </div>
             <div
-              class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
+              class="hidden lg:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
             ></div>
           </div>
-          <div class="experience-item mt-3 sm:pe-8">
+          <div class="experience-item mt-3 lg:pe-8">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               {{ $t("experience.zabal.title") }}
             </h3>
             <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+              class="block mb-2 text-lg font-normal leading-none text-gray-400 dark:text-gray-500"
             >
               {{ $t("experience.zabal.subtitle") }}
             </time>
@@ -37,10 +37,10 @@
             </p>
           </div>
         </li>
-        <li class="relative mb-6 sm:mb-0">
+        <li class="relative mb-6 lg:mb-0">
           <div class="flex items-center">
             <div
-              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
+              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 lg:ring-8 dark:ring-gray-900 shrink-0"
             >
               <svg
                 class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
@@ -55,15 +55,15 @@
               </svg>
             </div>
             <div
-              class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
+              class="hidden lg:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
             ></div>
           </div>
-          <div class="experience-item mt-3 sm:pe-8">
+          <div class="experience-item mt-3 lg:pe-8">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               {{ $t("experience.guane.title") }}
             </h3>
             <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+              class="block mb-2 text-lg font-normal leading-none text-gray-400 dark:text-gray-500"
             >
               {{ $t("experience.guane.subtitle") }}
             </time>
@@ -72,10 +72,10 @@
             </p>
           </div>
         </li>
-        <li class="relative mb-6 sm:mb-0">
+        <li class="relative mb-6 lg:mb-0">
           <div class="flex items-center">
             <div
-              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
+              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 lg:ring-8 dark:ring-gray-900 shrink-0"
             >
               <svg
                 class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
@@ -90,15 +90,15 @@
               </svg>
             </div>
             <div
-              class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
+              class="hidden lg:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
             ></div>
           </div>
-          <div class="experience-item mt-3 sm:pe-8">
+          <div class="experience-item mt-3 lg:pe-8">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               {{ $t("experience.envba.title") }}
             </h3>
             <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+              class="block mb-2 text-lg font-normal leading-none text-gray-400 dark:text-gray-500"
             >
               {{ $t("experience.envba.subtitle") }}
             </time>
@@ -129,6 +129,9 @@
   padding: 20px;
   font-size: 16px;
   height: 188px;
+  @media (max-width: 1023px) {
+    height: auto;
+  }
   h3 {
     color: $secondary-color;
     margin-bottom: 5px;
