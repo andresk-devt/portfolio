@@ -29,7 +29,7 @@
           title: $t('experience.title'),
           subtitle: $t('experience.subtitle'),
         }"
-        style="height: 100%;"
+        style="height: 100%"
       >
         <template #article-container-content>
           <Experience />
@@ -50,7 +50,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/scss/_main.scss";
 
 .home-container {
@@ -69,5 +69,8 @@
   right: 2%;
   top: 9px;
   z-index: 105;
+  @media (max-width: 750px) {
+    display: none;
+  }
 }
 </style>

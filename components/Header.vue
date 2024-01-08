@@ -1,7 +1,36 @@
-<script setup></script>
+<script>
+import { ref, onMounted, onUnmounted } from "vue";
+
+export default {
+  setup() {
+    const isOpenMenu = ref(false);
+    const handleMenu = (data) => {
+      isOpenMenu.value = data;
+    };
+    const closeMenuOnOutsideClick = (event) => {
+      if (isOpenMenu.value && !event.target.closest(".header-container")) {
+        isOpenMenu.value = false;
+      }
+    };
+    onMounted(() => {
+      document.body.addEventListener("click", closeMenuOnOutsideClick);
+    });
+    onUnmounted(() => {
+      document.body.removeEventListener("click", closeMenuOnOutsideClick);
+    });
+    return { handleMenu, isOpenMenu };
+  },
+};
+</script>
 
 <template>
   <div class="header-container">
+    <div class="menu-icon" @click="handleMenu(true)">
+      <Icon name="ion:menu-outline" />
+    </div>
+    <div class="menu-list-container" :class="isOpenMenu ? 'is-open' : ''">
+      <SidebarMenu @close-menu="handleMenu" />
+    </div>
     <div class="title-container">
       <h1 class="title-container__text">
         {{ "< Andres" }}<span>{{ "Gomez />" }}</span>
@@ -53,16 +82,37 @@
     }
   }
 }
-
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+.menu-list-container {
+  position: absolute;
+  background-color: #2d3245;
+  width: 60%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out; 
+  transform: translateX(-100%);
+}
+.is-open {
+  transform: translateX(0);
+}
 @media (max-width: 750px) {
+  .menu-icon {
+    display: block;
+    svg {
+      font-size: 35px;
+      color: $text-color;
+    }
+  }
   .header-container {
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 0px 30px;
   }
-  .menu-container-list {
-    gap: 25px;
-  }
-  .title-container {
+  .menu-container {
     display: none;
   }
 }
