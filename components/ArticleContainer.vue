@@ -9,5 +9,6 @@
   max-width: 950px;
   margin: auto;
   padding: 20px;
+  margin: 30px auto;
 }
 </style>

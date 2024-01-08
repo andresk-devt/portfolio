@@ -31,7 +31,7 @@
   align-items: center;
   margin: auto;
   &__content {
-    width: 95%;
+    width: 100%;
     padding: 20px;
   }
   &-list {
@@ -49,7 +49,7 @@
   }
 }
 .title-container {
-  width: 95%;
+  width: 100%;
   font-family: $font-portfolio;
   &__subtitle {
     color: $text-color;
