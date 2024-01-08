@@ -46,6 +46,7 @@
         </template>
       </ArticleContainer>
     </main>
+    <Footer />
   </div>
 </template>
 
