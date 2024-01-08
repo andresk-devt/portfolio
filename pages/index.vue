@@ -8,9 +8,10 @@
         <LanguageSelector />
       </div>
     </div>
-    <div class="home-container__content">
+    <main class="home-container__content">
       <HomeInformation />
-    </div>
+      <ProjectsInformation />
+    </main>
   </div>
 </template>
 

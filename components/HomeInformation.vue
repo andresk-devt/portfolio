@@ -133,6 +133,7 @@ watch(locale, (newValue) => {
     background-color: $secondary-color;
     border: none;
     color: $text-color;
+    cursor: pointer;
   }
 }
 @keyframes change {
