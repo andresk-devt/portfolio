@@ -29,8 +29,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
-  width: 61%;
   margin: auto;
   &__content {
     width: 95%;

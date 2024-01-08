@@ -9,8 +9,16 @@
       </div>
     </div>
     <main class="home-container__content">
-      <HomeInformation />
-      <ProjectsInformation />
+      <ArticleContainer>
+        <template #article-container-content>
+          <HomeInformation />
+        </template>
+      </ArticleContainer>
+      <ArticleContainer>
+        <template #article-container-content>
+          <ProjectsInformation />
+        </template>
+      </ArticleContainer>
     </main>
   </div>
 </template>

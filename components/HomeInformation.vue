@@ -59,8 +59,6 @@ watch(locale, (newValue) => {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
-  padding: 30px;
   @media (max-width: 940px) {
     flex-direction: column;
   }
