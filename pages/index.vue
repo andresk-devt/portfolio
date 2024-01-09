@@ -29,7 +29,7 @@
           title: $t('experience.title'),
           subtitle: $t('experience.subtitle'),
         }"
-        style="height: 100%"
+        class="experience-module"
       >
         <template #article-container-content>
           <Experience />
@@ -64,6 +64,12 @@
   z-index: 99;
 }
 
+.experience-module {
+  margin-bottom: 100px;
+  @media (max-width: 1023px) {
+    margin-bottom: 0px;
+  }
+}
 .language-selector {
   position: absolute;
   right: 2%;

@@ -27,14 +27,21 @@
   &__content {
     width: 100%;
     padding: 20px;
+    @media (max-width: 800px) {
+      height: 100vh;
+    }
   }
   &-list {
     width: 100%;
     height: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(32%, 4fr));
+    grid-template-columns: repeat(auto-fill, minmax(25%, 4fr));
     gap: 20px;
     grid-template-rows: 50% 50%;
+    @media (max-width: 800px) {
+      grid-template-rows: none;
+      grid-template-columns: none;
+    }
     &__item {
       height: 100%;
       background: #282c3e;

@@ -22,7 +22,7 @@ defineProps(["title"]);
   margin: 30px auto;
 }
 .title-container {
-  width: 100%;
+  margin-left: 30px;
   font-family: $font-portfolio;
   &__subtitle {
     color: $text-color;
