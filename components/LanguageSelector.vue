@@ -100,7 +100,6 @@ onMounted(() => {
   padding: 3px;
   padding-left: 7px;
   border-radius: 4px;
-  background: $primary-color;
   &-list__item {
     cursor: pointer;
   }

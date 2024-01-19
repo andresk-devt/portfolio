@@ -57,24 +57,22 @@ watch(locale, (newValue) => {
 <style lang="scss" scoped>
 .home-information {
   display: flex;
-  justify-content: center;
   align-items: center;
   @media (max-width: 940px) {
     flex-direction: column;
   }
 }
 .personal-content {
-  width: 40%;
-  min-width: 542px;
+  width: 54%;
   &__title {
     font-weight: 600;
     font-family: $font-portfolio;
     overflow: hidden;
     height: 40px;
     color: $text-color;
-    font-size: 2rem;
+    font-size: 1.5rem;
     @media (max-width: 610px) {
-      font-size: 1.7rem;
+      font-size: 1.1rem;
     }
   }
   &__subtitle {
@@ -99,7 +97,7 @@ watch(locale, (newValue) => {
 }
 .title-list {
   margin-top: 0;
-  padding-left: 110px;
+  padding-left: 75px;
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;
@@ -114,13 +112,13 @@ watch(locale, (newValue) => {
     min-width: 380px;
   }
   @media (max-width: 610px) {
-    padding-left: 90px;
+    padding-left: 55px;
   }
 }
 .more-space {
-  padding-left: 185px;
+  padding-left: 140px;
   @media (max-width: 610px) {
-    padding-left: 155px;
+    padding-left: 103px;
   }
 }
 .button-container {

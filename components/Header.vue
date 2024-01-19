@@ -38,7 +38,9 @@ export default {
     </div>
     <nav class="menu-container">
       <ul class="menu-container-list">
-        <li class="menu-container-list__item">{{ $t("header.home") }}</li>
+        <li class="menu-container-list__item active">
+          {{ $t("header.home") }}
+        </li>
         <li class="menu-container-list__item">{{ $t("header.services") }}</li>
         <li class="menu-container-list__item">{{ $t("header.projects") }}</li>
         <li class="menu-container-list__item">{{ $t("header.contact") }}</li>
@@ -52,7 +54,6 @@ export default {
   display: flex;
   justify-content: space-around;
   height: 65px;
-  background-color: $tertiary-color;
 }
 .title-container {
   display: flex;
@@ -104,7 +105,17 @@ export default {
 .is-open {
   transform: translateX(0);
 }
+.active {
+  background-color: $tertiary-color;
+  padding: 5px;
+  width: 90px;
+  text-align: center;
+  border-radius: 25px;
+}
 @media (max-width: 750px) {
+  .title-container {
+    margin-right: 30px;
+  }
   .menu-icon {
     display: block;
     svg {

@@ -16,7 +16,7 @@ defineProps(["title"]);
 
 <style lang="scss" scoped>
 .article-container {
-  max-width: 950px;
+  max-width: 800px;
   margin: auto;
   padding: 20px;
   margin: 30px auto;

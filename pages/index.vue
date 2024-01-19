@@ -1,48 +1,19 @@
 <script setup></script>
 
 <template>
-  <div class="home-container">
+  <div
+    class="home-container absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+  >
     <div class="header-container">
       <Header />
       <div class="language-selector">
         <LanguageSelector />
       </div>
     </div>
-    <main class="home-container__content">
-      <ArticleContainer>
+    <main class="home-container__content" id="content">
+      <ArticleContainer id="home-information">
         <template #article-container-content>
           <HomeInformation />
-        </template>
-      </ArticleContainer>
-      <ArticleContainer
-        :title="{
-          title: $t('projects.title'),
-          subtitle: $t('projects.subtitle'),
-        }"
-      >
-        <template #article-container-content>
-          <ProjectsInformation />
-        </template>
-      </ArticleContainer>
-      <ArticleContainer
-        :title="{
-          title: $t('experience.title'),
-          subtitle: $t('experience.subtitle'),
-        }"
-        class="experience-module"
-      >
-        <template #article-container-content>
-          <Experience />
-        </template>
-      </ArticleContainer>
-      <ArticleContainer
-        :title="{
-          title: $t('contact.title'),
-          subtitle: $t('contact.subtitle'),
-        }"
-      >
-        <template #article-container-content>
-          <ContactContainer />
         </template>
       </ArticleContainer>
     </main>
@@ -53,30 +24,16 @@
 <style lang="scss" scoped>
 @import "../assets/scss/_main.scss";
 
-.home-container {
-  position: relative;
-  background-color: $primary-color;
-}
-
 .header-container {
   position: sticky;
   top: 0;
   z-index: 99;
 }
 
-.experience-module {
-  margin-bottom: 100px;
-  @media (max-width: 1023px) {
-    margin-bottom: 0px;
-  }
-}
 .language-selector {
   position: absolute;
   right: 2%;
   top: 9px;
   z-index: 105;
-  @media (max-width: 750px) {
-    display: none;
-  }
 }
 </style>
