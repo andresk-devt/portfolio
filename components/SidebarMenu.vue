@@ -21,7 +21,7 @@ export default defineComponent({
       <li class="sidebar-menu-list__item">{{ $t("header.projects") }}</li>
       <li class="sidebar-menu-list__item">{{ $t("header.contact") }}</li>
       <li class="sidebar-menu-list__item">
-        <LanguageSelector />
+        <!-- <LanguageSelector /> -->
       </li>
     </ul>
   </div>

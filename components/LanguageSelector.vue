@@ -113,8 +113,12 @@ onMounted(() => {
   cursor: pointer;
 }
 
-.dropdown-arrow svg {
-  color: $text-color;
+.dropdown-arrow {
+  display: flex;
+  align-items: center;
+  svg {
+    color: $text-color;
+  }
 }
 
 img {
