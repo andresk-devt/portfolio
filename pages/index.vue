@@ -16,6 +16,11 @@
           <HomeInformation />
         </template>
       </ArticleContainer>
+      <ArticleContainer id="experience">
+        <template #article-container-content>
+          <Experience />
+        </template>
+      </ArticleContainer>
     </main>
     <Footer />
   </div>
@@ -23,6 +28,12 @@
 
 <style lang="scss" scoped>
 @import "../assets/scss/_main.scss";
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+}
 
 .header-container {
   position: sticky;

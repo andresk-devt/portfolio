@@ -4,12 +4,6 @@ defineProps(["title"]);
 
 <template>
   <div class="article-container">
-    <div class="title-container" v-if="title">
-      <span class="title-container__subtitle"> {{ title.subtitle }} </span>
-      <h1 class="title-container__title">
-        {{ title.title }}
-      </h1>
-    </div>
     <slot name="article-container-content"></slot>
   </div>
 </template>
@@ -20,9 +14,11 @@ defineProps(["title"]);
   margin: auto;
   padding: 20px;
   margin: 30px auto;
+  @media (max-width: 800px) {
+    padding: 35px;
+  }
 }
 .title-container {
-  margin-left: 30px;
   font-family: $font-portfolio;
   &__subtitle {
     color: $text-color;

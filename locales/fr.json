@@ -21,21 +21,21 @@
     "subtitle": "services"
   },
   "experience": {
-    "title": "Expérience",
+    "title": "Expérience professionnelle",
     "subtitle": "en vedette",
     "zabal": {
       "title": "Entrepôt Zabal",
-      "subtitle": "Mai, 2021 / Développeur Full-Stack",
+      "subtitle": "Mai, 2021 - Développeur Full-Stack",
       "text": "Responsable de la création d'un produit web personnalisé, adapté aux besoins spécifiques de l'entreprise. J'ai dirigé le développement de cette solution dans le but d'optimiser les processus internes et d'obtenir une amélioration significative des temps de fonctionnement."
     },
     "guane": {
       "title": "Guane Emerging technologies",
-      "subtitle": "Nov, 2021 / Développeur Web",
+      "subtitle": "Actuellement - Développeur Web",
       "text": "Responsable du développement d'interfaces efficaces et fonctionnelles. Je contribue à la performance et à la convivialité des applications en mettant en œuvre les meilleures pratiques, avec les technologies frontales. Je travaille en collaboration avec les concepteurs et les développeurs back-end."
     },
     "envba": {
       "title": "Envba Software Solutions",
-      "subtitle": "Jan, 2023 / Développeur Full-Stack",
+      "subtitle": "Jan, 2023 - Développeur Full-Stack",
       "text": "Ma startup où je développe des projets freelance avec des amis, créant des solutions numériques uniques et innovantes adaptées aux besoins du client."
     }
   },

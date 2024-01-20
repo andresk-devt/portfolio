@@ -54,6 +54,7 @@ export default {
   display: flex;
   justify-content: space-around;
   height: 65px;
+  background: $primary-color;
 }
 .title-container {
   display: flex;
