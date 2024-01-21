@@ -21,6 +21,11 @@
           <Experience />
         </template>
       </ArticleContainer>
+      <ArticleContainer id="projects">
+        <template #article-container-content>
+          <ProjectsInformation />
+        </template>
+      </ArticleContainer>
     </main>
     <Footer />
   </div>
