@@ -39,6 +39,20 @@
       "text": "My startup where I develop freelance projects with friends, creating unique and innovative digital solutions adapted to the client's needs. client's needs."
     }
   },
+  "project": {
+    "portal": {
+      "title": "GLT LOGISTICS - PORTAL",
+      "description": "Portal is a comprehensive platform for GLT logistics, simplifying the quoting, shipping and payment of packages. Users can generate detailed quotes, specify dimensions and additional services, and compare carrier options. The application optimizes costs, delivery times and offers the ability to quote insurance, all while facilitating payments directly within the platform. This holistic approach improves shipping management efficiency for GLT's customers."
+    },
+    "zabal": {
+      "title": "ZABAL STORE",
+      "description": "Zabal Store is the complete solution for efficient warehouse management. This software provides a centralized dashboard that offers vital information about records, categories, products, customers and warehouses. Users enjoy full control over their data, supported by customized roles and permissions that are tailored to their responsibilities in the warehouse. From quotes and invoices to expense tracking and employee loan management, Zabal Store covers all key aspects of warehouse management. This system facilitates agile decision making and improves operational efficiency by consolidating all essential functions into one intuitive and powerful platform."
+    },
+    "raizco": {
+      "title": "RAIZCO CORE",
+      "description": "RaizcoCORE, specialized solution for raizco real estate, solves the challenge of managing properties efficiently. Connecting directly to the Wasi marketing platform, RaizcoCORE simplifies the management and control of properties, automating the publication in several portals and feeding the real estate website. This unique tool eliminates the need for a dual manual process, providing a comprehensive and agile solution for real estate management."
+    }
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "",

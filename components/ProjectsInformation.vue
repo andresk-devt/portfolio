@@ -17,10 +17,9 @@ import Mongo from "@/public/assets/icons/mongo.svg";
 const projectsList = [
   {
     id: "portal",
-    title: "GLT LOGISTICS - PORTAL",
+    title: "project.portal.title",
     image: PortalImage,
-    description:
-      "Portal es una plataforma integral para GLT logistics, simplificando la cotización, envío y pagos de paquetes. Los usuarios pueden generar cotizaciones detalladas, especificar dimensiones y servicios adicionales, y comparar opciones de transportistas. La aplicación optimiza costos, tiempos de entrega y ofrece la posibilidad de cotizar seguros, todo mientras facilita la realización de pagos directamente dentro de la plataforma. Este enfoque holístico mejora la eficiencia en la gestión de envíos para los clientes de GLT.",
+    description: "project.portal.description",
     link: "https://shipwithglt.com/tutorial-videos/",
     tags: [
       { text: "HTML 5", icon: HTML },
@@ -31,10 +30,9 @@ const projectsList = [
   },
   {
     id: "zabal",
-    title: "ZABAL STORE",
+    title: "project.zabal.title",
     image: ZabalImage,
-    description:
-      "Zabal Store es la solución completa para una administración eficiente de bodegas. Este software proporciona un dashboard centralizado que ofrece información vital sobre registros, categorías, productos, clientes y almacenes. Los usuarios disfrutan de un control total sobre sus datos, respaldado por roles y permisos personalizados que se adaptan a sus responsabilidades en la bodega. Desde cotizaciones y facturas hasta el seguimiento de gastos y la gestión de préstamos a trabajadores, Zabal Store abarca todos los aspectos clave de la gestión de bodegas. Este sistema facilita una toma de decisiones ágil y mejora la eficiencia operativa, consolidando todas las funciones esenciales en una plataforma intuitiva y potente. ",
+    description: "project.zabal.description",
     tags: [
       { text: "HTML 5", icon: HTML },
       { text: "Vue.js", icon: VueJS },
@@ -47,11 +45,10 @@ const projectsList = [
   },
   {
     id: "raizco",
-    title: "RAIZCO CORE",
+    title: "project.raizco.title",
     image: RaizcoImage,
-    description:
-      "RaizcoCORE, solución especializada para raizco inmobiliaria, resuelve el desafío de gestionar propiedades de manera eficiente. Conectando directamente con la plataforma de marketing Wasi, RaizcoCORE simplifica la gestión y control de inmuebles, automatizando la publicación en diversos portales y alimentando la página web de la inmobiliaria. Esta herramienta única elimina la necesidad de un proceso manual dual, proporcionando una solución integral y ágil para la administración inmobiliaria.",
-      tags: [
+    description: "project.raizco.description",
+    tags: [
       { text: "HTML 5", icon: HTML },
       { text: "Vue.js", icon: VueJS },
       { text: "JavaScript", icon: JavaScript },

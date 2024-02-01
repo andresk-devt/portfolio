@@ -1,14 +1,16 @@
 <script setup>
 import { defineProps } from "vue";
+import { useI18n } from "vue-i18n";
 
+const i18n = useI18n();
 const props = defineProps(["image", "title", "description", "tags"]);
 </script>
 
 <template>
   <div class="project-card">
     <div class="project-card-title">
-      <h1 class="project-card-title__text">{{ title }}</h1>
-      <p class="project-card-title__subtitle">{{ description }}</p>
+      <h1 class="project-card-title__text">{{ i18n.t(title) }}</h1>
+      <p class="project-card-title__subtitle">{{ i18n.t(description) }}</p>
     </div>
     <div class="tags-container">
       <div class="tags-container__item" v-for="item in tags">
@@ -50,7 +52,7 @@ const props = defineProps(["image", "title", "description", "tags"]);
     border-radius: 25px;
     gap: 7px;
     font-size: 15px;
-    color: white;
+    color: $text-color;
     img {
       width: 15px;
     }

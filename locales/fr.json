@@ -39,6 +39,20 @@
       "text": "Ma startup où je développe des projets freelance avec des amis, créant des solutions numériques uniques et innovantes adaptées aux besoins du client."
     }
   },
+  "project": {
+    "portal": {
+      "title": "GLT LOGISTICS - PORTAL",
+      "description": "Portal est une plateforme complète pour la logistique GLT, qui simplifie l'établissement des devis, l'expédition et le paiement des colis. Les utilisateurs peuvent générer des devis détaillés, spécifier les dimensions et les services supplémentaires, et comparer les options des transporteurs. L'application optimise les coûts, les délais de livraison et offre la possibilité de proposer une assurance, tout en facilitant les paiements directement au sein de la plateforme. Cette approche holistique améliore l'efficacité de la gestion des expéditions pour les clients de GLT."
+    },
+    "zabal": {
+      "title": "ZABAL STORE",
+      "description": "Zabal Store est la solution complète pour une gestion efficace des entrepôts. Ce logiciel fournit un tableau de bord centralisé qui offre des informations vitales sur les enregistrements, les catégories, les produits, les clients et les entrepôts. Les utilisateurs bénéficient d'un contrôle total sur leurs données, grâce à des rôles et des autorisations personnalisés, adaptés à leurs responsabilités dans l'entrepôt. Des devis aux factures en passant par le suivi des dépenses et la gestion des prêts aux employés, Zabal Store couvre tous les aspects clés de la gestion d'un entrepôt. Le système facilite la prise de décision et améliore l'efficacité opérationnelle en consolidant toutes les fonctions essentielles au sein d'une plateforme intuitive et puissante."
+    },
+    "raizco": {
+      "title": "RAIZCO CORE",
+      "description": "RaizcoCORE, une solution spécialisée pour l'immobilier raizco, résout le défi de la gestion efficace des propriétés. Se connectant directement à la plateforme de marketing Wasi, RaizcoCORE simplifie la gestion et le contrôle des propriétés, en automatisant la publication sur différents portails et en alimentant le site web de l'immobilier. Cet outil unique élimine le besoin d'un double processus manuel, fournissant une solution complète et agile pour la gestion des propriétés."
+    }
+  },
   "contact": {
     "title": "Contactez-moi",
     "subtitle": "",
