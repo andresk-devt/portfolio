@@ -1,11 +1,11 @@
 <script>
-import { ref, onMounted, onUnmounted, defineProps } from "vue";
+import { ref, onMounted, onUnmounted, defineEmits } from "vue";
 
 export default {
   props: {
     mainComponent: String,
   },
-  setup(props) {
+  setup(props, { emit }) {
     const isOpenMenu = ref(false);
     const handleMenu = (data) => {
       isOpenMenu.value = data;
@@ -21,7 +21,11 @@ export default {
     onUnmounted(() => {
       document.body.removeEventListener("click", closeMenuOnOutsideClick);
     });
-    return { handleMenu, isOpenMenu, props };
+    const emitScrollToSelectedSection = (section) => {
+      emit('scrollToSelectedSection', section);
+      handleMenu(false);
+    };
+    return { handleMenu, isOpenMenu, props, emitScrollToSelectedSection };
   },
 };
 </script>
@@ -35,6 +39,7 @@ export default {
       <SidebarMenu
         :mainComponent="props.mainComponent"
         @close-menu="handleMenu"
+        @emitScrollToSelectedSection="emitScrollToSelectedSection"
       />
     </div>
     <div class="title-container">
@@ -47,22 +52,24 @@ export default {
         <li
           class="menu-container-list__item"
           :class="props.mainComponent === 'home' ? 'active' : ''"
+          @click="emitScrollToSelectedSection('home')"
         >
           {{ $t("header.home") }}
         </li>
         <li
           class="menu-container-list__item"
           :class="props.mainComponent === 'experience' ? 'active' : ''"
+          @click="emitScrollToSelectedSection('experience')"
         >
           {{ $t("header.experience") }}
         </li>
         <li
           class="menu-container-list__item"
           :class="props.mainComponent === 'projects' ? 'active' : ''"
+          @click="emitScrollToSelectedSection('projects')"
         >
           {{ $t("header.projects") }}
         </li>
-        <!-- <li class="menu-container-list__item">{{ $t("header.contact") }}</li> -->
       </ul>
     </nav>
   </div>

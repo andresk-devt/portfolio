@@ -9,6 +9,9 @@ export default defineComponent({
     closeSidebar() {
       this.$emit("close-menu", false);
     },
+    emitScrollToSelectedSection(section) {
+      this.$emit("emitScrollToSelectedSection", section);
+    },
   },
 });
 </script>
@@ -22,22 +25,24 @@ export default defineComponent({
       <li
         class="sidebar-menu-list__item"
         :class="mainComponent === 'home' ? 'active' : ''"
+        @click="emitScrollToSelectedSection('home')"
       >
         {{ $t("header.home") }}
       </li>
       <li
         class="sidebar-menu-list__item"
         :class="mainComponent === 'experience' ? 'active' : ''"
+        @click="emitScrollToSelectedSection('experience')"
       >
         {{ $t("header.experience") }}
       </li>
       <li
         class="sidebar-menu-list__item"
         :class="mainComponent === 'projects' ? 'active' : ''"
+        @click="emitScrollToSelectedSection('projects')"
       >
         {{ $t("header.projects") }}
       </li>
-      <!-- <li class="sidebar-menu-list__item">{{ $t("header.contact") }}</li> -->
     </ul>
   </div>
 </template>

@@ -2,35 +2,44 @@
 import { ref, onMounted } from "vue";
 
 const mainComponent = ref("home");
+const containerComponent = ref("");
+const components = ref({});
 
 const handleMainComponent = ({ experience, projects }) => {
   if (experience >= -360 && experience <= 220) {
     mainComponent.value = "experience";
-  }
-  else if (projects <= 340) {
+  } else if (projects <= 340) {
     mainComponent.value = "projects";
-  }
-  else {
+  } else {
     mainComponent.value = "home";
   }
 };
 
+const scrollToSelectedSection = (component, additionalScroll = -100) => {
+  const componentToScroll = components.value[component];
+  const newPosition = componentToScroll.getBoundingClientRect().top + additionalScroll;
+  containerComponent.value.scrollBy({
+    top: newPosition,
+    behavior: "smooth"
+  });
+};
+
 onMounted(() => {
-  const componentContainer = document.getElementById("main-content");
-  const components = {
+  containerComponent.value = document.getElementById("main-content");
+  components.value = {
     home: document.getElementById("home-information"),
-    experience: document.getElementById("experience"),
-    projects: document.getElementById("projects"),
+    experience: document.getElementById("experience-information"),
+    projects: document.getElementById("projects-information"),
   };
   const handleScroll = () => {
-    const positions = Object.keys(components).reduce((acc, key) => {
-      const component = components[key];
+    const positions = Object.keys(components.value).reduce((acc, key) => {
+      const component = components.value[key];
       acc[key] = component.getBoundingClientRect().top;
       return acc;
     }, {});
     handleMainComponent(positions);
   };
-  componentContainer.addEventListener("scroll", handleScroll);
+  containerComponent.value.addEventListener("scroll", handleScroll);
 });
 </script>
 
@@ -40,7 +49,10 @@ onMounted(() => {
     id="main-content"
   >
     <div class="header-container">
-      <Header :mainComponent="mainComponent" />
+      <Header
+        :mainComponent="mainComponent"
+        @scrollToSelectedSection="scrollToSelectedSection"
+      />
       <div class="language-selector">
         <LanguageSelector />
       </div>
@@ -48,17 +60,17 @@ onMounted(() => {
     <main class="home-container__content" id="content">
       <ArticleContainer id="home-information">
         <template #article-container-content>
-          <HomeInformation />
+          <HomeInformation id="home" />
         </template>
       </ArticleContainer>
-      <ArticleContainer id="experience">
+      <ArticleContainer id="experience-information">
         <template #article-container-content>
-          <Experience />
+          <Experience id="experience"/>
         </template>
       </ArticleContainer>
-      <ArticleContainer id="projects">
+      <ArticleContainer id="projects-information">
         <template #article-container-content>
-          <ProjectsInformation />
+          <ProjectsInformation id="projects"/>
         </template>
       </ArticleContainer>
     </main>
