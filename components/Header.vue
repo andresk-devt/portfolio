@@ -1,8 +1,11 @@
 <script>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, defineProps } from "vue";
 
 export default {
-  setup() {
+  props: {
+    mainComponent: String,
+  },
+  setup(props) {
     const isOpenMenu = ref(false);
     const handleMenu = (data) => {
       isOpenMenu.value = data;
@@ -18,7 +21,7 @@ export default {
     onUnmounted(() => {
       document.body.removeEventListener("click", closeMenuOnOutsideClick);
     });
-    return { handleMenu, isOpenMenu };
+    return { handleMenu, isOpenMenu, props };
   },
 };
 </script>
@@ -29,7 +32,10 @@ export default {
       <Icon name="ion:menu-outline" />
     </div>
     <div class="menu-list-container" :class="isOpenMenu ? 'is-open' : ''">
-      <SidebarMenu @close-menu="handleMenu" />
+      <SidebarMenu
+        :mainComponent="props.mainComponent"
+        @close-menu="handleMenu"
+      />
     </div>
     <div class="title-container">
       <h1 class="title-container__text">
@@ -38,12 +44,25 @@ export default {
     </div>
     <nav class="menu-container">
       <ul class="menu-container-list">
-        <li class="menu-container-list__item active">
+        <li
+          class="menu-container-list__item"
+          :class="props.mainComponent === 'home' ? 'active' : ''"
+        >
           {{ $t("header.home") }}
         </li>
-        <li class="menu-container-list__item">{{ $t("header.services") }}</li>
-        <li class="menu-container-list__item">{{ $t("header.projects") }}</li>
-        <li class="menu-container-list__item">{{ $t("header.contact") }}</li>
+        <li
+          class="menu-container-list__item"
+          :class="props.mainComponent === 'experience' ? 'active' : ''"
+        >
+          {{ $t("header.experience") }}
+        </li>
+        <li
+          class="menu-container-list__item"
+          :class="props.mainComponent === 'projects' ? 'active' : ''"
+        >
+          {{ $t("header.projects") }}
+        </li>
+        <!-- <li class="menu-container-list__item">{{ $t("header.contact") }}</li> -->
       </ul>
     </nav>
   </div>

@@ -2,6 +2,9 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
+  props: {
+    mainComponent: String,
+  },
   methods: {
     closeSidebar() {
       this.$emit("close-menu", false);
@@ -16,13 +19,25 @@ export default defineComponent({
       <li class="close-button sidebar-menu-list__item">
         <Icon name="ion:ios-close" @click="closeSidebar(false)" />
       </li>
-      <li class="sidebar-menu-list__item">{{ $t("header.home") }}</li>
-      <li class="sidebar-menu-list__item">{{ $t("header.services") }}</li>
-      <li class="sidebar-menu-list__item">{{ $t("header.projects") }}</li>
-      <li class="sidebar-menu-list__item">{{ $t("header.contact") }}</li>
-      <li class="sidebar-menu-list__item">
-        <!-- <LanguageSelector /> -->
+      <li
+        class="sidebar-menu-list__item"
+        :class="mainComponent === 'home' ? 'active' : ''"
+      >
+        {{ $t("header.home") }}
       </li>
+      <li
+        class="sidebar-menu-list__item"
+        :class="mainComponent === 'experience' ? 'active' : ''"
+      >
+        {{ $t("header.experience") }}
+      </li>
+      <li
+        class="sidebar-menu-list__item"
+        :class="mainComponent === 'projects' ? 'active' : ''"
+      >
+        {{ $t("header.projects") }}
+      </li>
+      <!-- <li class="sidebar-menu-list__item">{{ $t("header.contact") }}</li> -->
     </ul>
   </div>
 </template>
@@ -47,5 +62,8 @@ export default defineComponent({
     font-size: 35px;
     cursor: pointer;
   }
+}
+.active {
+  text-decoration: underline;
 }
 </style>
