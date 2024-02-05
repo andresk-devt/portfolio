@@ -38,8 +38,22 @@ watch(locale, (newValue) => {
       <p class="personal-content__subtitle">
         {{ $t("homeInformation.personalInformation") }}
       </p>
-      <div class="button-container">
-        <button class="button-container__button">{{ $t('homeInformation.buttonText') }}</button>
+      <div class="personal-content__footer">
+        <div class="button-container">
+          <button class="button-container__button">{{ $t('homeInformation.buttonText') }}</button>
+        </div>
+        <ul class="social-media-list">
+          <li class="social-media-list__item">
+            <a href="https://github.com/andresk-devt" target="_blank">
+              <Icon name="ion:logo-github" />
+            </a>
+          </li>
+          <li class="social-media-list__item">
+            <a href="https://linkedin.com/in/andres-dvt" target="_blank">
+              <Icon name="ion:logo-linkedin" />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="animation-container">
@@ -90,9 +104,36 @@ watch(locale, (newValue) => {
     align-items: center;
     height: 100%;
   }
+  &__footer {
+    display: flex;
+  }
   @media (max-width: 940px) {
     width: 90%;
     min-width: 0px;
+  }
+}
+.social-media-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 15px;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: $tertiary-color;
+    border-radius: 50%;
+    cursor: pointer;
+    a {
+      display: flex;
+    }
+    svg {
+      font-size: 20px;
+      color: white;
+    }
   }
 }
 .title-list {

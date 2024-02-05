@@ -44,7 +44,7 @@ export default {
     </div>
     <div class="title-container">
       <h1 class="title-container__text">
-        {{ "< Andres" }}<span>{{ "Gomez />" }}</span>
+        {{ "<Andres" }}<span>{{ "Gomez />" }}</span>
       </h1>
     </div>
     <nav class="menu-container">
