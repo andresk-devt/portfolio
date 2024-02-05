@@ -2,10 +2,18 @@
 import { Vue3Lottie } from "vue3-lottie";
 import { useI18n } from "vue-i18n";
 import CoderAnimation from "@/public/assets/animations/coder-animation.json";
+import CV from "@/public/assets/CV/Andres_Camilo_Gomez_CV.pdf"
 import { ref, watch } from "vue";
 
 const { locale } = useI18n();
 const selectedLanguage = ref("");
+
+const downloadCV = () => {
+  const link = document.createElement("a");
+  link.href = CV;
+  link.download = "Andres_Camilo_Gomez_CV.pdf";
+  link.click();
+};
 
 watch(locale, (newValue) => {
   selectedLanguage.value = newValue;
@@ -40,7 +48,9 @@ watch(locale, (newValue) => {
       </p>
       <div class="personal-content__footer">
         <div class="button-container">
-          <button class="button-container__button">{{ $t('homeInformation.buttonText') }}</button>
+          <button class="button-container__button" @click="downloadCV()">
+            {{ $t("homeInformation.buttonText") }}
+          </button>
         </div>
         <ul class="social-media-list">
           <li class="social-media-list__item">
