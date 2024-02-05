@@ -52,9 +52,9 @@ const languageOptions = ref([
 ]);
 
 const selectedLanguage = ref({
-  value: "es",
-  label: i18n.t("languageSelector.es"),
-  image: colombiaFlag,
+  value: "en",
+  label: i18n.t("languageSelector.en"),
+  image: usaFlag,
 });
 
 const filteredLanguageOptions = computed(() => {
